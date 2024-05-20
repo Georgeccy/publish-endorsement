@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1B1924;
+
+}
+
+.heading {
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* I wonder why the "justify-content: space-around" has no effect at all, which I expected to automatically add some space to the top and bottom of the entire page. Finally, I had to add 15 px margin-bottom to ".display-endorsements" to achieve this*/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* I have added a lot of magic numbers in this CSS file, such as "width: 320px" in "section" elements, "width: 150px" in ".input-field-small" elements, "font-size: 25px" in ".heading" elements. With my current knowledge, I had to do this; otherwise the page will overflow on mobile devices. However, I know this is not good and wonder a better solution. */
+section {
+    box-sizing: border-box;
+    width: 320px;
+}
+
+.publish-endorsement {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-field, #publish-btn {
+    color: #ffffff;
+    background-color: #444059;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.input-field-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* The space between the two small buttons "to" and "from" is bigger than the original design, since I have used slightly different numbers. I wonder how to improve this.  */
+.input-field-small {
+    text-align: center;
+    box-sizing: border-box;
+    width: 150px;
+}
+
+#publish-btn {
+    color: #04131C;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #28A9F1;
+    border: none;
+}
+
+#publish-btn:hover {
+    background-color: #0369A1;    
+}
+
+/* I wonder why there is some space above "To somebody" even though I set the top and bottom padding to 0px. However, once I comment out the "display: flex" within ".endorsement-list", the white space will disappear. */
+#endorsement-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.endorsement-item {
+    background: #ffffff;
+    padding: 0px 15px;
+    word-wrap: break-word;
+}
+
+.endorser, .endorsee, .likes {
+    font-weight: bold;
+}
+
+.fromAndLikes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.likes, .endorser {
+    margin-top: 0px;
+}
+
+.likes{
+    -webkit-user-select: none;         
+}
+
+.likes:hover {
+    color: rebeccapurple;
+}
+
+.display-endorsements{
+    margin-bottom: 15px;
+}
+

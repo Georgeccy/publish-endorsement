@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>We are the Champions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <img src="./freddie.png">
+            <h1 class="heading">We are the Champions</h1>
+            <section class="publish-endorsement">
+                <textarea class="input-field" id="input-field-endorsement" name="input-field-endorsement" rows="5" cols="50" placeholder="Write your endorsement here"></textarea>
+                <div class="input-field-group">
+                    <input type="text" class="input-field input-field-small" id="input-field-from" placeholder="From">
+                    <input type="text" class="input-field input-field-small" id="input-field-to" placeholder="To">
+                </div>
+                <button id="publish-btn">Publish</button>
+            </section>
+            <section class="display-endorsements">
+                <h2 class="heading">- Endorsements -</h2>
+                <div id="endorsement-list">
+                </div>
+            </section>
+        </div>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
