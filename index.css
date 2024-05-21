@@ -16,15 +16,16 @@ html, body {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    margin-top: 30px;
+    margin: 30px auto;
+    max-width: 320px;
+    outline: 2px solid red;
 }
 
 /* I have added a lot of magic numbers in this CSS file, such as "width: 320px" in "section" elements, "width: 150px" in ".input-field-small" elements, "font-size: 25px" in ".heading" elements. With my current knowledge, I had to do this; otherwise the page will overflow on mobile devices. However, I know this is not good and wonder a better solution. */
 section {
     box-sizing: border-box;
-    width: 320px;
+    width: 100%;
 }
 
 .publish-endorsement {
@@ -51,7 +52,7 @@ section {
 .input-field-small {
     text-align: center;
     box-sizing: border-box;
-    width: 150px;
+    width: 50%;
 }
 
 #publish-btn {
@@ -99,8 +100,3 @@ section {
 .likes:hover {
     color: rebeccapurple;
 }
-
-.display-endorsements{
-    margin-bottom: 15px;
-}
-
