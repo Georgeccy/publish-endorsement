@@ -20,16 +20,16 @@ const endorsementListEl = document.getElementById("endorsement-list")
 
 // Event listener for the publish button to upload complete user input(which means that all the "endorsement", "from" and "to" fields are entered)) and clear input fields
 publishBtnEl.addEventListener("click", function() {
-    let inputValue = {
-        "endorsement": inputFieldEndorsementEl.value || null,
-        "from": "From " + inputFieldFromEl.value || null,
-        "to": "To " + inputFieldToEl.value || null,
-        "likes": 0,
-    }
-    if(inputValue["endorsement"]&&inputValue["from"]&&inputValue["to"]){
+    if(inputFieldEndorsementEl.value && inputFieldFromEl.value && inputFieldToEl.value){
+        const inputValue = {
+            "endorsement": inputFieldEndorsementEl.value,
+            "from": "From " + inputFieldFromEl.value,
+            "to": "To " + inputFieldToEl.value,
+            "likes": 0,
+        } 
         push(endorsementListInDB, inputValue);
+        clearInputFieldEl()
     }
-    clearInputFieldEl()
 })
 
 // Function to clear input fields of "endorsement", "from" and "to".
