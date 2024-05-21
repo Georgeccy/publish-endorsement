@@ -29,6 +29,8 @@ publishBtnEl.addEventListener("click", function() {
         } 
         push(endorsementListInDB, inputValue);
         clearInputFieldEl()
+    }else{
+        alert("Please enter all the three fields😊")
     }
 })
 
