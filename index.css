@@ -19,7 +19,6 @@ html, body {
     align-items: center;
     margin: 30px auto;
     max-width: 320px;
-    outline: 2px solid red;
 }
 
 /* I have added a lot of magic numbers in this CSS file, such as "width: 320px" in "section" elements, "width: 150px" in ".input-field-small" elements, "font-size: 25px" in ".heading" elements. With my current knowledge, I had to do this; otherwise the page will overflow on mobile devices. However, I know this is not good and wonder a better solution. */
