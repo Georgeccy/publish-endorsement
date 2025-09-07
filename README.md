@@ -47,10 +47,6 @@ If you want to contribute or run the project locally:
 
 - **George Chen** (Main Contributor)
 
-## License
-
-Specify your license here (e.g., MIT, Apache 2.0).  
-_If you have not chosen a license, you can add one later._
 
 ## Feedback & Contributions
 
